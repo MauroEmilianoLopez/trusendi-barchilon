@@ -62,8 +62,17 @@ body{font-family:'Poppins','Inter',sans-serif;color:#111827;background:#fff;over
 <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
-      <div class="flex items-center">
-        <img src="logo.png" alt="Barchilón - Trusendi Abogados" class="h-11 w-auto rounded-lg" style="mix-blend-mode:multiply;filter:brightness(0.92) contrast(1.1)"/>
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="Logo" class="h-10 w-auto rounded-lg" onerror="this.style.display='none';document.getElementById('logo-fallback').style.display='flex'"/>
+        <div id="logo-fallback" style="display:flex;align-items:center;gap:10px">
+          <div style="width:32px;height:32px;background:#2563EB;border-radius:8px;display:flex;align-items:center;justify-content:center">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;color:white" fill="none" stroke="white" stroke-width="2"><path d="M12 2L8 8H2l5 4-2 6 7-4 7 4-2-6 5-4h-6z"/></svg>
+          </div>
+          <div>
+            <p style="font-weight:600;font-size:13px;color:#111827;line-height:1.2">Trusendi & Barchilón</p>
+            <p style="font-size:10px;color:#6b7280;letter-spacing:.1em;text-transform:uppercase">Abogados · San Luis</p>
+          </div>
+        </div>
       </div>
       <div class="hidden md:flex items-center gap-7">
         <a href="#especialidades" class="nav-item text-[13px] font-medium text-gray-600 hover:text-ink transition-colors">Especialidades</a>
@@ -87,7 +96,7 @@ body{font-family:'Poppins','Inter',sans-serif;color:#111827;background:#fff;over
 </nav>
 
 <!-- HERO -->
-<section class="hero-grid hero-dot min-h-[92vh] flex items-center relative overflow-hidden">
+<section style="background:#0f172a;background-image:linear-gradient(135deg,#0f172a 0%,#1e293b 50%,#0f172a 100%),radial-gradient(circle,rgba(59,130,246,.15) 1px,transparent 1px);background-size:cover,28px 28px;min-height:92vh;display:flex;align-items:center;position:relative;overflow:hidden">
   <div class="absolute inset-0 pointer-events-none">
     <div class="absolute top-20 right-20 w-72 h-72 bg-blue-600 opacity-[.07] rounded-full blur-3xl"></div>
     <div class="absolute bottom-20 left-10 w-96 h-96 bg-blue-400 opacity-[.05] rounded-full blur-3xl"></div>
@@ -95,14 +104,19 @@ body{font-family:'Poppins','Inter',sans-serif;color:#111827;background:#fff;over
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 grid lg:grid-cols-2 gap-16 items-center relative">
     <div>
       <span class="hero-badge text-xs font-medium px-3 py-1.5 rounded-full inline-block mb-6 tracking-wide">Estudio Jurídico · San Luis, Argentina</span>
-      <h1 class="text-white text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
+      <h1 class="text-white text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6" style="text-shadow:0 2px 16px rgba(0,0,0,.5)">
         Seguridad Jurídica<br/>
         para el Mundo Digital<br/>
         <span class="text-blue-400">y de Negocios.</span>
       </h1>
-      <p class="text-gray-400 text-base sm:text-lg leading-relaxed mb-10 max-w-lg font-light">
-        Asesoramiento estratégico para empresas, emprendedores y entornos tecnológicos. Liderado por la <strong class="text-gray-300">Abog. Abril Barchilón Egea</strong> — Especialista en Derecho Penal y Profesora de Derecho Procesal Penal (UCCuyo).
-      </p>
+      <div class="bg-white/5 border border-white/10 rounded-xl px-5 py-4 mb-10 max-w-lg backdrop-blur-sm">
+        <p class="text-gray-200 text-sm sm:text-base leading-relaxed font-light">
+          Asesoramiento estratégico para empresas, emprendedores y entornos tecnológicos.
+        </p>
+        <p class="text-blue-300 text-sm mt-2 font-medium">
+          Liderado por la Abog. Abril Barchilón Egea — Especialista en Derecho Penal y Profesora de Derecho Procesal Penal (UCCuyo).
+        </p>
+      </div>
       <div class="flex flex-col sm:flex-row gap-3">
         <a href="https://wa.me/5492664859618" target="_blank" class="inline-flex items-center justify-center gap-2 bg-brand hover:bg-brandDark transition-all text-white font-semibold px-6 py-3.5 rounded-xl text-sm shadow-lg shadow-blue-900/30">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.115.552 4.1 1.516 5.824L0 24l6.335-1.493A11.936 11.936 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.782 9.782 0 01-4.988-1.364l-.358-.213-3.761.886.938-3.657-.233-.374A9.78 9.78 0 012.182 12C2.182 6.586 6.586 2.182 12 2.182c5.414 0 9.818 4.404 9.818 9.818 0 5.414-4.404 9.818-9.818 9.818z"/></svg>
@@ -164,7 +178,7 @@ body{font-family:'Poppins','Inter',sans-serif;color:#111827;background:#fff;over
 </section>
 
 <!-- VALORES -->
-<section class="bg-inkLight py-0">
+<section style="background:#1f2937;padding:0" class="py-0">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
       <div class="flex items-center gap-5 px-8 py-8">
